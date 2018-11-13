@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="sogecarPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>entities.Souscripteurs</class>
+    <class>entities.Incorporations</class>
+    <class>entities.Exercices</class>
+    <class>entities.BaremePrestations</class>
+    <class>entities.Zonegeos</class>
+    <class>entities.CategoriePrestations</class>
+    <class>entities.Bpc</class>
+    <class>entities.Polices</class>
+    <class>entities.BonusMalus</class>
+    <class>entities.Prestataires</class>
+    <class>entities.Succursales</class>
+    <class>entities.Medecins</class>
+    <class>entities.Assures</class>
+    <class>entities.Etablissements</class>
+    <class>entities.Decomptes</class>
+    <class>entities.TypeEmploye</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/sogecar"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="edmichs"/>
+    </properties>
+  </persistence-unit>
+</persistence>
