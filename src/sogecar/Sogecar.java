@@ -5,6 +5,8 @@
  */
 package sogecar;
 
+import gui.JF_Principal;
+
 /**
  *
  * @author EDY TCHOKOUANI
@@ -15,7 +17,8 @@ public class Sogecar {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+        JF_Principal jfp = new JF_Principal();
+        jfp.setVisible(true);
     }
     
 }
